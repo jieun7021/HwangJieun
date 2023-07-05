@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>회원가입 & 정보확인</title>
+</head>
+<body>
+    
+    <div id ="container">
+        <form id ="userJoin" >
+            <h1>회원가입</h1>
+            <ul>
+                <li>
+                    <label class="field" for="userId">아이디</label>
+                    <input type="text" id="userId" name ="userId" class="input-box" placeholder="4~15자리의 영문과 숫자로 입력">
+                </li>
+                <li>
+                    <label class="field" for="userPw">비밀번호</label>
+                    <input type="password" id="userPw" name="userPw" class="input-box"  placeholder="8자리 이상">
+                </li>
+                <li>
+                    <label class="field" for="userPw2">비밀번호 확인</label>
+                    <input type="password" id="userPw2" name="userPw2" class="input-box" >
+                </li>
+                <li>
+                    <label class="field" for="userName">이름</label>
+                    <input type="text" id="userName" name="userName" class="input-box" >
+                </li>
+                <li>
+                    <label class="field" for="userTel">전화번호</label>
+                    <input type="text" id="userTel" name="userTel" class="input-box" >
+                </li>
+                <li>
+                    <label class="field">성별</label>
+                    <label><input type="radio" name="gender" value="man" id="man">남자</label>
+                    <label><input type="radio" name="gender" value="woman" id="woman">여자</label>
+                </li>
+                <li>
+                    <label class="field">학과</label>
+                    <select name="major" id="major" class="input-box">
+                        <option value="0">학과 선택</option>
+                        <option value="1">건축공학과</option>
+                        <option value="2">기계공학과</option>
+                        <option value="3">산업공학과</option>
+                        <option value="4">전기전자공학과</option>
+                        <option value="5">컴퓨터공학과</option>
+                        <option value="6">화학공학과</option>
+                    </select>
+                </li>                    
+                <li>
+                    <label class="field">좋아하는 가수</label>
+
+                    <label>
+                        <input type="checkbox" name="singer" value="singer1" id="singer1">아이브
+                    </label> 
+                    <label>
+                        <input type="checkbox" name="singer" value="singer2" id="singer2">르세라핌
+                    </label> 
+                    <label>
+                        <input type="checkbox" name="singer" value="singer3" id="singer3">방탄
+                    </label>
+                    <label>
+                        <input type="checkbox" name="singer" value="singer4" id="singer4">NCT
+                    </label>
+                </li>
+            </ul>
+            <div class="button-div">
+                <button type="submit" class="button">확인</button>
+                <button type="reset" class="button">취소</button>
+            </div>
+        </form>
+        <hr/>
+        <form id="chkInfo">
+                <h1>정보확인</h1>
+                <ul>
+                    <li>
+                        <label class="field" for="userId-result">아이디</label>
+                        <input type="text" id="userId-result" name ="userId-result" class="input-box"  placeholder="4~15자리의 영문과 숫자로 입력">
+                    </li>
+                    <li>
+                        <label class="field" for="userPw-result">비밀번호</label>
+                        <input type="text" id="userPw-result" name="userPw-result" class="input-box"  placeholder="8자리 이상">
+                    </li>
+                    <li>
+                        <label class="field" for="userName-result">이름</label>
+                        <input type="text" id="userName-result" name="userName-result" class="input-box" >
+                    </li>
+                    <li>
+                        <label class="field" for="userTel-result">전화번호</label>
+                        <input type="text" id="userTel-result" name="userTel-result" class="input-box" >
+                    </li>
+                    <li>
+                        <label class="field">성별</label>
+                        <label><input type="radio" name="gender-result" value="man" id="man-result">남자</label>
+                        <label><input type="radio" name="gender-result" value="woman" id="woman-result">여자</label>
+                    </li>
+                    <li>
+                        <label class="field">학과</label>
+                        <select name="major-result" id="major-result" class="input-box">
+                            <option value="0">학과 선택</option>
+                            <option value="1">건축공학과</option>
+                            <option value="2">기계공학과</option>
+                            <option value="3">산업공학과</option>
+                            <option value="4">전기전자공학과</option>
+                            <option value="5">컴퓨터공학과</option>
+                            <option value="6">화학공학과</option>
+                        </select>
+                    </li>                    
+                    <li>
+                        <label class="field">좋아하는 가수</label>
+                        <label><input type="checkbox" name="singer-result" value="singer1" id="singer1-result">아이브</label> 
+                        <label><input type="checkbox" name="singer-result" value="singer2" id="singer2-result">르세라핌</label> 
+                        <label><input type="checkbox" name="singer-result" value="singer3" id="singer3-result">방탄</label>
+                        <label><input type="checkbox" name="singer-result" value="singer4" id="singer4-result">NCT</label>
+                    </li>
+                </ul>
+
+                <div class="button-div">
+                    <button type="submit" class="button-result">확인</button>
+                    <button type="reset" class="button-result">취소</button>             
+                </div>  
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
